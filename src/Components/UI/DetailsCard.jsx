@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import { IoCallOutline } from "react-icons/io5";
 import { IoMdText} from "react-icons/io";
 import { CiVideoOn } from "react-icons/ci";
+import { FriendContext } from '../Context/Context';
+
 
 const DetailsCard = ({ expectedFriend }) => {
+  const {handleTimeline}=useContext(FriendContext)
+
      const Tag_badge = {
   college: "badge badge-soft badge-info",
   friend: "badge badge-soft badge-success",
@@ -68,15 +72,21 @@ const Status_badge = {
             <div className='shadow-md rounded-md p-[20px]'>
                 <h1 className='text-2xl font-bold mb-4'>Quick Check-In</h1>
                 <div className='grid grid-cols-3 items-center mt-[10px]'>
-                    <div className='shadow-md rounded-md p-[20px] items-center'>
+                    <div 
+                    onClick={()=>handleTimeline("call",expectedFriend)}
+                    className='shadow-md rounded-md p-[20px] items-center'>
                         <h1 className='text-bol'><IoCallOutline /></h1>
                         <p>Call</p>
                     </div>
-                    <div className='shadow-md rounded-md p-[20px] items-center'>
+                    <div
+                    onClick={()=>handleTimeline("text",expectedFriend)}
+                     className='shadow-md rounded-md p-[20px] items-center'>
                         <h1><IoMdText /></h1>
                         <p>Text</p>
                     </div>
-                    <div className='shadow-md rounded-md p-[20px] items-center'>
+                    <div 
+                    onClick={()=>handleTimeline("video",expectedFriend)}
+                     className='shadow-md rounded-md p-[20px] items-center'>
                         <h1><CiVideoOn /></h1>
                         <p>Video</p>
                     </div>

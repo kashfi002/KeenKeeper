@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, {use} from 'react';
 import { useParams } from 'react-router';
 import DetailsCard from '../Components/UI/DetailsCard';
 
