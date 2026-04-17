@@ -8,13 +8,13 @@ const Navbar = () => {
     const navLinks = (
     <>
       <li>
-        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-green-900 border border-green-950" : ""}`} to="/"><RiHome2Fill />Home</NavLink>
+        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-[#244D3F] border border-green-950" : ""}`} to="/"><RiHome2Fill />Home</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-green-900 border border-green-950" : ""}`} to="/timeline"><CiClock2/>TimeLine</NavLink>
+        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-[#244D3F] border border-green-950" : ""}`} to="/timeline"><CiClock2/>TimeLine</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-green-900 border border-green-950" : ""}`} to="/stats"><TfiStatsUp/>Stats</NavLink>
+        <NavLink className={({isActive})=> `font-semibold space-x-1 ${isActive ? "text-white bg-[#244D3F] border border-green-950" : ""}`} to="/stats"><TfiStatsUp/>Stats</NavLink>
       </li>
     </>
   );

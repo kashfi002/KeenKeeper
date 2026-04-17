@@ -6,7 +6,7 @@ import instaImg from '../../assets/instagram.png';
  const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-horizontal footer-center bg-green-900 text-primary-content p-10">
+            <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
   <aside>
     <h1 className='text-3xl font-bold text-white'>Keen Keeper</h1>
     <p className="text-white">

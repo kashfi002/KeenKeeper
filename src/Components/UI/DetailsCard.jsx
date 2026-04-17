@@ -54,29 +54,29 @@ const Status_badge = {
          <div className='col-span-2'>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 w-full'>
                 <div className='shadow-md rounded-md text-center py-[10px]'>
-                    <h1 className='text-xl font-bold text-green-900'>{expectedFriend.days_since_contact}</h1>
+                    <h1 className='text-xl font-bold text-[#244D3F]'>{expectedFriend.days_since_contact}</h1>
                     <p>Days Since Contact</p>
                 </div>
                 <div className='shadow-md rounded-md text-center py-[10px]'>
-                    <h1 className='text-xl font-bold text-green-900'>{expectedFriend.goal}</h1>
+                    <h1 className='text-xl font-bold text-[#244D3F]'>{expectedFriend.goal}</h1>
                     <p>Goal (Days)</p>
                 </div>
                 <div className='shadow-md rounded-md text-center py-[10px]'>
-                    <h1 className='text-xl font-bold text-green-900'>{expectedFriend.next_due_date}</h1>
+                    <h1 className='text-xl font-bold text-[#244D3F]'>{expectedFriend.next_due_date}</h1>
                     <p>Next Due Date</p>
                 </div>
                 </div>
                 <div className='grid grid-cols-1'>
                     <div className='shadow-md rounded-md px-[20px] py-[80px] mt-[20px]'>
                     <div className='flex justify-between'>
-                        <h1 className=' text-2xl font-bold text-green-900'>Relationship Goal</h1>
+                        <h1 className=' text-2xl font-bold text-[#244D3F]'>Relationship Goal</h1>
                         <button className='btn'>Edit</button>
                     </div>
                     <p>Connect Every: {expectedFriend.goal} days</p>
                     </div>
                 </div>
             <div className='shadow-md rounded-md p-[20px]'>
-                <h1 className='text-2xl font-bold mb-10 text-green-900'>Quick Check-In</h1>
+                <h1 className='text-2xl font-bold mb-10 text-[#244D3F]'>Quick Check-In</h1>
                 <div className='grid grid-cols-3 items-center mt-[10px]'>
                     <div 
                     onClick={()=>handleTimeline("call",expectedFriend)}
