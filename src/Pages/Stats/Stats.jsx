@@ -10,15 +10,16 @@ const Stats = () => {
     const videoCount=timeLine.filter(i=>i.type==='video').length;
 
     return [
-      {name:'Call',value:callCount,fill:'#0088FE'},
-      { name:'Text',value:textCount,fill:'#00C49F'},
-      { name:'Video',value:videoCount,fill:'#FFBB28'},
+      {name:'Call',value:callCount,fill:'#244D3F'},
+      { name:'Text',value:textCount,fill:'#84b067'},
+      { name:'Video',value:videoCount,fill:'#0047AB'},
     ];
   }, [timeLine]);
 
     return (
-       <div className='shadow p-10 my-10 rounded-md border border-slate-300 container mx-auto items-center text-center'>
-        <h2 className='font-bold text-2xl mb-10'>Friendship Analytics</h2>
+       <div className='shadow p-10 my-10 rounded-md border border-slate-300 container mx-auto'>
+        <h2 className='font-bold text-4xl mb-10'>Friendship Analytics</h2>
+        <p className='text-[#244D3F] text-2xl'>By Interaction Type</p>
        <PieChart style=
        {{ width: '100%',
         margin:'auto',
@@ -30,10 +31,8 @@ const Stats = () => {
         data={data}
         innerRadius="80%"
         outerRadius="100%"
-        // Corner radius is the rounded edge of each pie slice
         cornerRadius="50%"
         fill="#8884d8"
-        // padding angle is the gap between each pie slice
         paddingAngle={5}
         dataKey="value"
         isAnimationActive={true}

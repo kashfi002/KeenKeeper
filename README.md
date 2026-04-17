@@ -1,16 +1,20 @@
-# React + Vite
+Project Name: Keen Keeper
+this website tracks our interactions with our friends. In a busy world we often forget 
+to check on our friends, this website also points our relationship goals and days since our
+last interaction. this also shows us whether our friends are from work,college,school or something else
+Technologies:
+1. Daisy UI
+2. Tailwind CSS
+3. JavaScript ES6
+4. React
+5. Context API
+6. React Toastify
+7. Recharts
+8. React icons
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features:
+1. shows all our friend with their names, and communication delayed status and how we know them in a single page, we can click on our friend card see their details
+2. shows the timeline of our communications. it shows us the date and time of our interaction and if
+texted, called or video called our friend.
+3. based on our interaction type it shows us a pie chart, we can easily check which interaction
+type is mostly used
