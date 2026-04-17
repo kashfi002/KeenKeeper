@@ -27,7 +27,6 @@ import instaImg from '../../assets/instagram.png';
       </a>
     </div>
   </nav>
-   <div className="divider"></div>
   <aside className='flex justify-between'>
     <p>© 2026 KeenKeeper- All right reserved</p>
     <p>Privacy Policy . Terms of Service . Cookies</p>

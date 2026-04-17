@@ -11,9 +11,9 @@ const FriendCard = ({friend}) => {
   school: "badge badge-soft badge-error",
 };
 const Status_badge = {
-  'almost due': "badge badge-error text-white",
+  'almost due': "badge badge-warning text-white",
   'on-track': "badge badge-success text-white",
-  'overdue': "badge badge-warning text-white",
+  'overdue': "badge badge-error text-white",
 };
     return (
             <Link to={`/details/${friend.id}`} className="card bg-base-100 w-96 shadow-sm px-[30px]">

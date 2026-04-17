@@ -7,7 +7,7 @@ const Context = ({children}) => {
         const handleTimeline=(type, expectedFriend)=>{
   setTimeLine(prev => [
     {
-      id:expectedFriend.id,
+      id:Date.now()+Math.random(),
       type,
       friend: expectedFriend,
       createdAt: new Date()

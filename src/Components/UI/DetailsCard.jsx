@@ -3,6 +3,9 @@ import { IoCallOutline } from "react-icons/io5";
 import { IoMdText} from "react-icons/io";
 import { CiVideoOn } from "react-icons/ci";
 import { FriendContext } from '../Context/Context';
+import { MdOutlineSnooze } from "react-icons/md";
+import { FaArchive } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 
 const DetailsCard = ({ expectedFriend }) => {
@@ -17,9 +20,9 @@ const DetailsCard = ({ expectedFriend }) => {
   school: "badge badge-soft badge-error",
 };
 const Status_badge = {
-  'almost due': "badge badge-error text-white",
+  'almost due': "badge badge-warning text-white",
   'on-track': "badge badge-success text-white",
-  'overdue': "badge badge-warning text-white",
+  'overdue': "badge badge-error text-white",
 };
     return (
         <div className='grid grid-cols-2 lg:grid-cols-3 container mx-auto mt-[40px] gap-[20px]'>
@@ -28,6 +31,9 @@ const Status_badge = {
                 <img 
                  className="w-24 h-24 rounded-full object-cover"
                 src={expectedFriend.picture} alt="" />
+                <h1 className='text-xl font-bold'>{expectedFriend.name}</h1>
+                <p  className='text-center'>{expectedFriend.bio}</p>
+                <p>Email-{expectedFriend.email}</p>
                  <div className={Status_badge[expectedFriend.status]}>{expectedFriend.status}</div>
                  <div className='flex gap-2 items-center'>
                  {
@@ -40,9 +46,9 @@ const Status_badge = {
     </div>
                 </div>
             <div className='flex flex-col gap-2'>
-                <button className='btn rounded-xl shadow-md w-full'>Snooze 2 weeks</button>
-                <button className='btn rounded-xl shadow-md w-full'>Snooze 2 weeks</button>
-                <button className='btn rounded-xl shadow-md w-full'>Snooze 2 weeks</button>
+                <button className='btn rounded-xl shadow-md w-full'><MdOutlineSnooze /> Snooze 2 weeks</button>
+                <button className='btn rounded-xl shadow-md w-full'><FaArchive /> Archive</button>
+                <button className='btn rounded-xl shadow-md w-full text-red-500'><MdDelete /> Delete</button>
             </div>
          </div>
          <div className='col-span-2'>
@@ -61,16 +67,16 @@ const Status_badge = {
                 </div>
                 </div>
                 <div className='grid grid-cols-1'>
-                    <div className='shadow-md rounded-md p-[20px] mt-[20px]'>
+                    <div className='shadow-md rounded-md px-[20px] py-[80px] mt-[20px]'>
                     <div className='flex justify-between'>
-                        <h1>Relationship Goal</h1>
+                        <h1 className=' text-2xl font-bold text-green-900'>Relationship Goal</h1>
                         <button className='btn'>Edit</button>
                     </div>
-                    <p>Connect Every:{expectedFriend.goal} days</p>
+                    <p>Connect Every: {expectedFriend.goal} days</p>
                     </div>
                 </div>
             <div className='shadow-md rounded-md p-[20px]'>
-                <h1 className='text-2xl font-bold mb-4'>Quick Check-In</h1>
+                <h1 className='text-2xl font-bold mb-10 text-green-900'>Quick Check-In</h1>
                 <div className='grid grid-cols-3 items-center mt-[10px]'>
                     <div 
                     onClick={()=>handleTimeline("call",expectedFriend)}
