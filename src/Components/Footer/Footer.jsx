@@ -27,7 +27,7 @@ import instaImg from '../../assets/instagram.png';
       </a>
     </div>
   </nav>
-  <aside className='flex justify-between'>
+  <aside className='flex justify-between gap-10'>
     <p>© 2026 KeenKeeper- All right reserved</p>
     <p>Privacy Policy . Terms of Service . Cookies</p>
   </aside>
