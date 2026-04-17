@@ -1,8 +1,14 @@
 Project Name: Keen Keeper
+
+
 this website tracks our interactions with our friends. In a busy world we often forget 
 to check on our friends, this website also points our relationship goals and days since our
 last interaction. this also shows us whether our friends are from work,college,school or something else
+
+
 Technologies:
+
+
 1. Daisy UI
 2. Tailwind CSS
 3. JavaScript ES6
