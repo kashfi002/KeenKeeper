@@ -9,7 +9,7 @@ const Banner = () => {
        relationships that matter most.</p>
        <button className='bg-green-900 px-[10px] py-[5px] rounded-md text-white'>+Add a Friend</button>
         </div>
-        <div className='container mx-auto gap-8 grid gap-2 grid-cols-2 lg:grid-cols-4'>
+        <div className='mb-[60px] container mx-auto gap-8 grid gap-2 grid-cols-2 lg:grid-cols-4'>
             <div className='flex flex-col justify-between items-center text-center shadow-md py-[20px] rounded-xl'>
                 <h1 className='text-xl text-green-900 font-bold'>10</h1>
                 <p className='text-gray-500'>Friends</p>
